@@ -1,7 +1,3 @@
-/* TODO
-   - refresh button?
- */
-
 const apiKey = '982d766304c44b02abc23ffb1472af56'
 
 const quantityElement = document.querySelector('#ag-grid-quantity')
@@ -27,7 +23,7 @@ const gridOptions = {
 const myGridElement = document.querySelector('#myGrid');
 const gridApi = agGrid.createGrid(myGridElement, gridOptions);
 
-let namesList = []
+let namesList = [];
 
 async function getNewNames(quantityToRetrieve) {
     if (quantityToRetrieve > 0) {
